@@ -1,0 +1,17 @@
+OUTPUT_ARCH(arm)
+
+SECTIONS
+{
+	. = 0x40000000;
+    .all ALIGN(8) : {*(.text .data .rodata)}
+	.section_end ALIGN(8) : {*(.section_end)}
+	. = .;
+	__bss_dram_start = .;
+	.bss ALIGN(8) : {*(.bss)}
+	.bss_static ALIGN(8) : {.bss.*}
+	. = .;
+	__bss_dram_end = .;
+}
+
+
+

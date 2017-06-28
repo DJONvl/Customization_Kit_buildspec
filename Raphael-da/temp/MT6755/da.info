@@ -1,0 +1,10 @@
+bbchip_hw_code=0x6755
+bbchip_hw_sub_code=0x0000
+bbchip_hw_ver=0xCA00
+bbchip_sw_ver=0x0000
+da_feature_set=0x1000
+bin_directory=.\Raphael-da/BIN\MTK_MT6755_DA.bin
+list_file=.\Raphael-da/BIN\MTK_MT6755_DA.bin\MTK_MT6755_DA_list.txt
+epp_bin_directory=.\Raphael-da/BIN\MTK_MT6755_EPP.bin
+epp_list_file=.\Raphael-da/BIN\MTK_MT6755_EPP.bin\MTK_MT6755_EPP_list.txt
+sig_file=.\Raphael-da/temp\MT6755\MTK_MT6755_DA.sig

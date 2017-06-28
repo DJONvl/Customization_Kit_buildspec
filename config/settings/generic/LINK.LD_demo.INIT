@@ -1,0 +1,20 @@
+OUTPUT_ARCH(arm)
+MEMORY {
+	text (rwx) : ORIGIN = INIT_START ,LENGTH = TEXT_LEN
+	bss	(rwx) : ORIGIN = INIT_START + LENGTH(.all)+LENGTH(.section_end),LENGTH = BSS_LEN
+}
+SECTIONS
+{
+	. = INIT_START;
+	__text_start = .;
+    .all ALIGN(8) : {*(.text .data .rodata)} > text 
+	.section_end ALIGN(8) : {*(.section_end)}
+	. = .;
+	__bss_start = .;
+	.bss ALIGN(8) : {*(.bss)} 			> bss
+	.bss_static ALIGN(8) : {.bss.*}		
+	. = .;
+	__bss_end = .;
+}
+
+

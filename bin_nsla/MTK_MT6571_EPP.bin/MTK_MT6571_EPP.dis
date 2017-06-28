@@ -1,0 +1,319 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: ./../BIN_nsla/MTK_MT6571_EPP.bin/MTK_MT6571_EPP.elf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: Not specified
+    Flags: EF_ARM_SYMSARESORTED + EF_ARM_MAPSYMSFIRST (0x02000014)
+
+    ABI conformance : ADS1.1, ADS1.2
+
+    Built with
+    ARM/Thumb Macro Assembler vsn ADS1.2 [Build 848]
+    Thumb C Compiler, ADS1.2 [Build 848]
+    ARM Linker, ADS1.2 [Build 848] 
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 15
+
+    Program header offset: 102052 (0x00018ea4)
+    Section header offset: 102084 (0x00018ec4)
+
+    Section header string table index: 14
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_R]
+    Size : 624 bytes
+    Virtual address: 0x80010000
+
+
+========================================================================
+
+** Section #1 'EPP_GFH_SECTION' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 56 bytes (alignment 4)
+    Address: 0x80010000
+
+    g_epp_gfh
+    EPP_GFH$8
+    $d
+    EPP_GFH
+        0x80010000:    014d4d4d    MMM.    DCD    21843277
+        0x80010004:    00000038    8...    DCD    56
+        0x80010008:    454c4946    FILE    DCD    1162627398
+        0x8001000c:    464e495f    _INF    DCD    1179535711
+        0x80010010:    0000004f    O...    DCD    79
+        0x80010014:    00000001    ....    DCD    1
+        0x80010018:    02000007    ....    DCD    33554439
+        0x8001001c:    80010000    ....    DCD    2147549184
+        0x80010020:    ffffffff    ....    DCD    4294967295
+        0x80010024:    00004000    .@..    DCD    16384
+        0x80010028:    00000038    8...    DCD    56
+        0x8001002c:    00000100    ....    DCD    256
+    $f
+        0x80010030:    80010099    ....    DCD    2147549337
+        0x80010034:    00000000    ....    DCD    0
+
+** Section #2 'READ_ONLY' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 568 bytes (alignment 4)
+    Address: 0x80010038
+
+    PrepareExtRAM
+    $t
+    .text
+        0x80010038:    b5b0        ..      PUSH     {r4,r5,r7,r14}
+        0x8001003a:    1c04        ..      MOV      r4,r0
+        0x8001003c:    2000        .       MOV      r0,#0
+        0x8001003e:    2501        .%      MOV      r5,#1
+        0x80010040:    042d        -.      LSL      r5,r5,#16
+        0x80010042:    3001        .0      ADD      r0,#1
+        0x80010044:    42a8        .B      CMP      r0,r5
+        0x80010046:    dbfc        ..      BLT      0x80010042  ; PrepareExtRAM + 10
+    $b
+        0x80010048:    f000f828    ..(.    BL       NOR_Boot_IsEnabled  ; 0x8001009c
+        0x8001004c:    2800        .(      CMP      r0,#0
+        0x8001004e:    d10f        ..      BNE      0x80010070  ; 0x80010070
+    $b
+        0x80010050:    f000f826    ..&.    BL       USBDownloadEnabled  ; 0x800100a0
+        0x80010054:    2800        .(      CMP      r0,#0
+        0x80010056:    d104        ..      BNE      0x80010062  ; PrepareExtRAM + 42
+        0x80010058:    1c20         .      MOV      r0,r4
+    $b
+        0x8001005a:    f000f823    ..#.    BL       SetupPLL  ; 0x800100a4
+        0x8001005e:    2800        .(      CMP      r0,#0
+        0x80010060:    d117        ..      BNE      0x80010092  ; PrepareExtRAM + 90
+        0x80010062:    1c21        !.      MOV      r1,r4
+        0x80010064:    2000        .       MOV      r0,#0
+    $b
+        0x80010066:    f000f81f    ....    BL       SetupEMI_DRAM  ; 0x800100a8
+        0x8001006a:    2800        .(      CMP      r0,#0
+        0x8001006c:    d111        ..      BNE      0x80010092  ; PrepareExtRAM + 90
+        0x8001006e:    e008        ..      B        0x80010082  ; 0x80010082
+    $b
+        0x80010070:    f000f816    ....    BL       USBDownloadEnabled  ; 0x800100a0
+        0x80010074:    2800        .(      CMP      r0,#0
+        0x80010076:    d104        ..      BNE      0x80010082  ; 0x80010082
+        0x80010078:    1c20         .      MOV      r0,r4
+    $b
+        0x8001007a:    f000f813    ....    BL       SetupPLL  ; 0x800100a4
+        0x8001007e:    2800        .(      CMP      r0,#0
+        0x80010080:    d107        ..      BNE      0x80010092  ; PrepareExtRAM + 90
+    $b
+        0x80010082:    f000f814    ....    BL       SetupUART  ; 0x800100ae
+        0x80010086:    2800        .(      CMP      r0,#0
+        0x80010088:    d103        ..      BNE      0x80010092  ; PrepareExtRAM + 90
+        0x8001008a:    3001        .0      ADD      r0,#1
+        0x8001008c:    42a8        .B      CMP      r0,r5
+        0x8001008e:    dbfc        ..      BLT      0x8001008a  ; PrepareExtRAM + 82
+        0x80010090:    2000        .       MOV      r0,#0
+        0x80010092:    bcb0        ..      POP      {r4,r5,r7}
+        0x80010094:    bc08        ..      POP      {r3}
+        0x80010096:    4718        .G      BX       r3
+    EPP_Entry_Point
+        0x80010098:    2000        .       MOV      r0,#0
+        0x8001009a:    4770        pG      BX       r14
+    NOR_Boot_IsEnabled
+    .text
+        0x8001009c:    2000        .       MOV      r0,#0
+        0x8001009e:    4770        pG      BX       r14
+    USBDownloadEnabled
+        0x800100a0:    2000        .       MOV      r0,#0
+        0x800100a2:    4770        pG      BX       r14
+    SetupPLL
+        0x800100a4:    2000        .       MOV      r0,#0
+        0x800100a6:    4770        pG      BX       r14
+    SetupEMI_DRAM
+        0x800100a8:    2000        .       MOV      r0,#0
+        0x800100aa:    4770        pG      BX       r14
+    UART_Init
+        0x800100ac:    4770        pG      BX       r14
+    SetupUART
+        0x800100ae:    2000        .       MOV      r0,#0
+        0x800100b0:    4770        pG      BX       r14
+    $d
+        0x800100b2:    0000        ..      DCW    0
+    store_8word
+    $a
+    Autotrack
+        0x800100b4:    e92d03f0    ..-.    STMFD    r13!,{r4-r9}
+        0x800100b8:    e1e03001    .0..    MVN      r3,r1
+        0x800100bc:    e0814001    .@..    ADD      r4,r1,r1
+        0x800100c0:    e0835003    .P..    ADD      r5,r3,r3
+        0x800100c4:    e0846004    .`..    ADD      r6,r4,r4
+        0x800100c8:    e0857005    .p..    ADD      r7,r5,r5
+        0x800100cc:    e0868006    ....    ADD      r8,r6,r6
+        0x800100d0:    e0879007    ....    ADD      r9,r7,r7
+        0x800100d4:    e88003fa    ....    STMIA    r0,{r1,r3-r9}
+        0x800100d8:    e8bd03f0    ....    LDMFD    r13!,{r4-r9}
+        0x800100dc:    e12fff1e    ../.    BX       r14
+    load_8word
+        0x800100e0:    e92d1ff0    ..-.    STMFD    r13!,{r4-r12}
+        0x800100e4:    e3a0c000    ....    MOV      r12,#0
+        0x800100e8:    e1e03001    .0..    MVN      r3,r1
+        0x800100ec:    e8900ff0    ....    LDMIA    r0,{r4-r11}
+        0x800100f0:    e1540001    ..T.    CMP      r4,r1
+        0x800100f4:    13a0c009    ....    MOVNE    r12,#9
+        0x800100f8:    1a000019    ....    BNE      LoadEnd  ; 0x80010164
+        0x800100fc:    e1550003    ..U.    CMP      r5,r3
+        0x80010100:    13a0c00a    ....    MOVNE    r12,#0xa
+        0x80010104:    1a000016    ....    BNE      LoadEnd  ; 0x80010164
+        0x80010108:    e0811001    ....    ADD      r1,r1,r1
+        0x8001010c:    e1560001    ..V.    CMP      r6,r1
+        0x80010110:    13a0c00b    ....    MOVNE    r12,#0xb
+        0x80010114:    1a000012    ....    BNE      LoadEnd  ; 0x80010164
+        0x80010118:    e0833003    .0..    ADD      r3,r3,r3
+        0x8001011c:    e1570003    ..W.    CMP      r7,r3
+        0x80010120:    13a0c00c    ....    MOVNE    r12,#0xc
+        0x80010124:    1a00000e    ....    BNE      LoadEnd  ; 0x80010164
+        0x80010128:    e0811001    ....    ADD      r1,r1,r1
+        0x8001012c:    e1580001    ..X.    CMP      r8,r1
+        0x80010130:    13a0c00d    ....    MOVNE    r12,#0xd
+        0x80010134:    1a00000a    ....    BNE      LoadEnd  ; 0x80010164
+        0x80010138:    e0833003    .0..    ADD      r3,r3,r3
+        0x8001013c:    e1590003    ..Y.    CMP      r9,r3
+        0x80010140:    13a0c00e    ....    MOVNE    r12,#0xe
+        0x80010144:    1a000006    ....    BNE      LoadEnd  ; 0x80010164
+        0x80010148:    e0811001    ....    ADD      r1,r1,r1
+        0x8001014c:    e15a0001    ..Z.    CMP      r10,r1
+        0x80010150:    13a0c00f    ....    MOVNE    r12,#0xf
+        0x80010154:    1a000002    ....    BNE      LoadEnd  ; 0x80010164
+        0x80010158:    e0833003    .0..    ADD      r3,r3,r3
+        0x8001015c:    e15b0003    ..[.    CMP      r11,r3
+        0x80010160:    13a0c010    ....    MOVNE    r12,#0x10
+    LoadEnd
+        0x80010164:    e1a0000c    ....    MOV      r0,r12
+        0x80010168:    e8bd1ff0    ....    LDMFD    r13!,{r4-r12}
+        0x8001016c:    e12fff1e    ../.    BX       r14
+    g_epp_sig
+    EPP_SIGNATURE_SECTION$13
+    $d
+    EPP_SIGNATURE_SECTION
+        0x80010170:    00000001    ....    DCD    1
+        0x80010174:    00000000    ....    DCD    0
+        0x80010178:    00000000    ....    DCD    0
+        0x8001017c:    00000000    ....    DCD    0
+        0x80010180:    00000000    ....    DCD    0
+        0x80010184:    00000000    ....    DCD    0
+        0x80010188:    00000000    ....    DCD    0
+        0x8001018c:    00000000    ....    DCD    0
+        0x80010190:    00000000    ....    DCD    0
+        0x80010194:    00000000    ....    DCD    0
+        0x80010198:    00000000    ....    DCD    0
+        0x8001019c:    00000000    ....    DCD    0
+        0x800101a0:    00000000    ....    DCD    0
+        0x800101a4:    00000000    ....    DCD    0
+        0x800101a8:    00000000    ....    DCD    0
+        0x800101ac:    00000000    ....    DCD    0
+        0x800101b0:    00000000    ....    DCD    0
+        0x800101b4:    00000000    ....    DCD    0
+        0x800101b8:    00000000    ....    DCD    0
+        0x800101bc:    00000000    ....    DCD    0
+        0x800101c0:    00000000    ....    DCD    0
+        0x800101c4:    00000000    ....    DCD    0
+        0x800101c8:    00000000    ....    DCD    0
+        0x800101cc:    00000000    ....    DCD    0
+        0x800101d0:    00000000    ....    DCD    0
+        0x800101d4:    00000000    ....    DCD    0
+        0x800101d8:    00000000    ....    DCD    0
+        0x800101dc:    00000000    ....    DCD    0
+        0x800101e0:    00000000    ....    DCD    0
+        0x800101e4:    00000000    ....    DCD    0
+        0x800101e8:    00000000    ....    DCD    0
+        0x800101ec:    00000000    ....    DCD    0
+        0x800101f0:    00000000    ....    DCD    0
+        0x800101f4:    00000000    ....    DCD    0
+        0x800101f8:    00000000    ....    DCD    0
+        0x800101fc:    00000000    ....    DCD    0
+        0x80010200:    00000000    ....    DCD    0
+        0x80010204:    00000000    ....    DCD    0
+        0x80010208:    00000000    ....    DCD    0
+        0x8001020c:    00000000    ....    DCD    0
+        0x80010210:    00000000    ....    DCD    0
+        0x80010214:    00000000    ....    DCD    0
+        0x80010218:    00000000    ....    DCD    0
+        0x8001021c:    00000000    ....    DCD    0
+        0x80010220:    00000000    ....    DCD    0
+        0x80010224:    00000000    ....    DCD    0
+        0x80010228:    00000000    ....    DCD    0
+        0x8001022c:    00000000    ....    DCD    0
+        0x80010230:    00000000    ....    DCD    0
+        0x80010234:    00000000    ....    DCD    0
+        0x80010238:    00000000    ....    DCD    0
+        0x8001023c:    00000000    ....    DCD    0
+        0x80010240:    00000000    ....    DCD    0
+        0x80010244:    00000000    ....    DCD    0
+        0x80010248:    00000000    ....    DCD    0
+        0x8001024c:    00000000    ....    DCD    0
+        0x80010250:    00000000    ....    DCD    0
+        0x80010254:    00000000    ....    DCD    0
+        0x80010258:    00000000    ....    DCD    0
+        0x8001025c:    00000000    ....    DCD    0
+        0x80010260:    00000000    ....    DCD    0
+        0x80010264:    00000000    ....    DCD    0
+        0x80010268:    00000000    ....    DCD    0
+        0x8001026c:    00000000    ....    DCD    0
+
+** Section #3 '.debug_abbrev' (SHT_PROGBITS)
+    Size   : 1004 bytes
+
+
+** Section #4 '.debug_frame' (SHT_PROGBITS)
+    Size   : 244 bytes
+
+
+** Section #5 '.debug_info' (SHT_PROGBITS)
+    Size   : 46236 bytes
+
+
+** Section #6 '.debug_line' (SHT_PROGBITS)
+    Size   : 3288 bytes
+
+
+** Section #7 '.debug_loc' (SHT_PROGBITS)
+    Size   : 456 bytes
+
+
+** Section #8 '.debug_macinfo' (SHT_PROGBITS)
+    Size   : 6988 bytes
+
+
+** Section #9 '.debug_pubnames' (SHT_PROGBITS)
+    Size   : 41336 bytes
+
+
+** Section #10 '.symtab' (SHT_SYMTAB)
+    Size   : 672 bytes (alignment 4)
+    String table '.strtab'
+    Last local symbol no. 26
+
+
+** Section #11 '.strtab' (SHT_STRTAB)
+    Size   : 468 bytes
+
+
+** Section #12 '.note' (SHT_NOTE)
+    Size   : 24 bytes (alignment 4)
+
+
+** Section #13 '.comment' (SHT_PROGBITS)
+    Size   : 476 bytes
+
+
+** Section #14 '.shstrtab' (SHT_STRTAB)
+    Size   : 184 bytes
+
+

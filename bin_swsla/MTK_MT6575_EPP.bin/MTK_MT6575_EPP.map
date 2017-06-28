@@ -1,0 +1,11 @@
+#<SYMDEFS># ARM Linker, ADS1.2 [Build 848]: Last Updated: Tue May 23 23:19:17 2017
+0xc2010000 D g_epp_gfh
+0xc2010038 T PrepareExtRAM
+0xc2010098 T EPP_Entry_Point
+0xc201009c T NOR_Boot_IsEnabled
+0xc20100a0 T USBDownloadEnabled
+0xc20100a4 T SetupPLL
+0xc20100ac T UART_Init
+0xc20100ae T SetupUART
+0xc20100b4 A store_8word
+0xc20100e0 A load_8word

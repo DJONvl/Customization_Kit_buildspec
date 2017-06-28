@@ -1,0 +1,13 @@
+bbchip_hw_code=0x6799
+bbchip_hw_sub_code=0x8A00
+bbchip_hw_ver=0xCB00
+bbchip_sw_ver=0x0001
+da_feature_set=0x1000
+bin_directory=.\Raphael-da/BIN_NSLA\MTK_MT6799_DA.bin
+list_file=.\Raphael-da/BIN_NSLA\MTK_MT6799_DA.bin\MTK_MT6799_DA_list.txt
+epp_bin_directory=.\Raphael-da/BIN_NSLA\MTK_MT6799_EPP.bin
+epp_list_file=.\Raphael-da/BIN_NSLA\MTK_MT6799_EPP.bin\MTK_MT6799_EPP_list.txt
+sig_file=.\Raphael-da/temp\MT6799\MTK_MT6799_DA_NSLA.sig
+custom_siggen_cb_exe=.\Raphael-da\custom\security_export\usbdl4enduser_dummy\PL_DA_Auth.exe
+custom_siggen_asym_key=.\Raphael-da\custom\security_export\usbdl4enduser_dummy\VERIFIED_BOOT_IMG_AUTH_KEY.ini
+custom_siggen_sym_key=.\Raphael-da\custom\security_export\usbdl4enduser_dummy\Dummy_K3.bin

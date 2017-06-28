@@ -1,0 +1,10 @@
+bbchip_hw_code=0x2601
+bbchip_hw_sub_code=0x8A00
+bbchip_hw_ver=0xCA00
+bbchip_sw_ver=0x0000
+da_feature_set=0x1000
+bin_directory=.\BIN\MTK_MT2601_DA.bin
+list_file=.\BIN\MTK_MT2601_DA.bin\MTK_MT2601_DA_list.txt
+epp_bin_directory=.\BIN\MTK_MT2601_EPP.bin
+epp_list_file=.\BIN\MTK_MT2601_EPP.bin\MTK_MT2601_EPP_list.txt
+sig_file=.\LIB\MTK_MT2601_DA.sig

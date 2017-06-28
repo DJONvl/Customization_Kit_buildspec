@@ -1,0 +1,355 @@
+;#<FEEDBACK># ARM Linker, 4.1 [Build 462]: Last Updated: Tue May 23 22:16:26 2017
+;VERSION 0.2
+;FILE BLOADER.o
+DownloadStart <= USED 0
+InitBufferSize <= USED 0
+InitSync <= USED 0
+SecureUsbDL_GetBLSecVersion <= USED 0
+SecureUsbDL_ImgInfoCheck <= USED 0
+SecureUsbDL_ParseInfo <= USED 0
+SecureUsbDL_ReCheck <= USED 0
+SecureUsbDL_ReCheckInternal <= USED 0
+SecureUsbDL_ReportInfo <= USED 0
+SecureUsbDL_RomInfoUpdate <= USED 0
+SecureUsbDL_UpdateOffset <= USED 0
+SecureUsbDL_Write <= USED 0
+;FILE EMI.o
+print_DBG_info <= USED 0
+release_dram <= USED 0
+rgu_dram_reserved <= USED 0
+rgu_is_dram_slf <= USED 0
+rgu_release_rg_dramc_conf_iso <= USED 0
+rgu_release_rg_dramc_iso <= USED 0
+rgu_release_rg_dramc_sref <= USED 0
+;FILE UART.o
+UART1_ReInit <= USED 0
+uart_putc_complete <= USED 0
+uart_putc_delay <= USED 0
+uart_reinit <= USED 0
+;FILE assert.o
+;FILE blkdev.o
+blkdev_bread_part <= USED 0
+blkdev_read_part <= USED 0
+;FILE bmt.o
+BLOCK_ALIGN <= USED 0
+LOGICAL_ADDR <= USED 0
+reconstruct_bmt <= USED 0
+;FILE cache.o
+DisableCache <= USED 0
+MTK_DisableCache <= USED 0
+;FILE cust.o
+;FILE da_init.o
+GetNandID <= USED 0
+LoadDALoopToDRAM <= USED 0
+ReportFlashID <= USED 0
+;FILE dl_usb.o
+USB_Register_EP0_Class_CmdHdlr <= USED 0
+;FILE dl_usb_debug_tool.o
+;FILE dl_usb_drv.o
+USBDMA_HISR <= USED 0
+USB_Clear_IN_EP_FIFO <= USED 0
+USB_Clear_OUT_EP_FIFO <= USED 0
+USB_DMA_Setup <= USED 0
+USB_EP_Poll_Bulk_Out_Ready <= USED 0
+USB_GetFrameCount <= USED 0
+USB_Get_Pro_USB_HISR <= USED 0
+USB_Get_UnMask_Irq <= USED 0
+USB_InEPClearData01 <= USED 0
+USB_InEPDis <= USED 0
+USB_Is_EP_Bulk_In_Empty <= USED 0
+USB_OutEPClearData01 <= USED 0
+USB_OutEPDis <= USED 0
+USB_Polling_Recv_Data <= USED 0
+USB_Resume <= USED 0
+USB_Set_UnMask_Irq <= USED 0
+USB_Suspend <= USED 0
+;FILE dl_usb_mode.o
+;FILE dl_usb_resource.o
+USB_Get_PID <= USED 0
+USB_Get_VID <= USED 0
+;FILE dl_usbacm_adap.o
+USB2COM_GetDatas <= USED 0
+USB2COM_PutDatas <= USED 0
+USB2UART_Polling_Recv_Data <= USED 0
+USB_Debug <= USED 0
+;FILE dl_usbacm_drv.o
+;FILE download_bloader.o
+Download_BL_CalNextBeginAddr <= USED 0
+Download_BL_CheckHeaderBlock <= USED 0
+;FILE dramc_calib.o
+ddr3_rank_size_detect <= USED 0
+;FILE dramc_dle_cal.o
+dqso_dly_factor_handler <= USED 0
+dram_driving_factor_handler <= USED 0
+dramc_cpu_rw_test <= USED 0
+dramc_ta1 <= USED 0
+ett_print_dram_driving <= USED 0
+;FILE dramc_dqs_gw.o
+dramc_ta2 <= USED 0
+ett_print_dqs_gw_after_finish_loop_n <= USED 0
+;FILE dummy.o
+;FILE ext_region.o
+sec_ext_reg_check_len <= USED 0
+;FILE flash_drv_8590.o
+Common_CheckDevIdle <= USED 0
+Common_Erase_CMD <= USED 0
+Common_Erase_CheckDone_By_Polling <= USED 0
+Common_Nor_Buf_Program <= USED 0
+Common_Nor_Buf_Program_Check_Done <= USED 0
+Common_Program_CheckDone_By_Toggle <= USED 0
+Common_Program_PostProcess <= USED 0
+Common_UnlockBypass_Enter_CMD <= USED 0
+Common_UnlockBypass_Exit_CMD <= USED 0
+Common_UnlockBypass_Program_CMD <= USED 0
+SFLASHHW_4BEraseSector <= USED 0
+SFLASHHW_4BWriteSector <= USED 0
+SFLASHHW_4BitRead <= USED 0
+SFLASHHW_4Byte4BitRead <= USED 0
+SFLASHHW_CalCRC <= USED 0
+SFLASHHW_DeInit <= USED 0
+SFLASHHW_EnableDMA <= USED 0
+SFLASHHW_EraseChip <= USED 0
+SFLASHHW_EraseSector <= USED 0
+SFLASHHW_GetFlashInfo <= USED 0
+SFLASHHW_GetFlashName <= USED 0
+SFLASHHW_GetFlashSize <= USED 0
+SFLASHHW_PinMux <= USED 0
+SFLASHHW_Read <= USED 0
+SFLASHHW_ReadSfProtect <= USED 0
+SFLASHHW_SetClk <= USED 0
+SFLASHHW_SetIsr <= USED 0
+SFLASHHW_WriteSector <= USED 0
+SFLASHHW_WriteSfProtect <= USED 0
+_SetFlashEnter4BitRead <= USED 0
+_SetFlashEnter4Byte <= USED 0
+_SetFlashExit4BitRead <= USED 0
+_SetFlashExit4Byte <= USED 0
+;FILE flash_otp.o
+;FILE flash_util_func.o
+FUTL_CheckRange <= USED 0
+FUTL_ConvertAddressToBlockIndex <= USED 0
+FUTL_ConvertBlockIndexToAddress <= USED 0
+FUTL_OTP_Lock <= USED 0
+FUTL_OTP_Program <= USED 0
+FUTL_OTP_Program_CheckDone <= USED 0
+FUTL_OTP_Read <= USED 0
+FUTL_ReadSector <= USED 0
+FUTL_ReadSectors <= USED 0
+FUTL_WriteSectors <= USED 0
+;FILE get_fw_ver.o
+;FILE hw_config.o
+DetectExtSRAM <= USED 0
+SetupEMI <= USED 0
+SetupEMI_ByBB <= USED 0
+delay_a_while <= USED 0
+;FILE kal_release.o
+kal_mem_set <= USED 0
+;FILE logging.o
+get_da_version <= USED 0
+;FILE main.o
+;FILE main_nand.o
+GetOffset <= USED 0
+LittleEndian2BigEndian32 <= USED 0
+NFB_FOTA_Super_Block_EndMark_Gen <= USED 0
+NMAIN_GetPageCmd <= USED 0
+NMAIN_ReadBlockCmd <= USED 0
+NMAIN_WriteBlockCmd <= USED 0
+NUTL_Convert_LogAddr_To_PhyAddr <= USED 0
+SSF_Build_CRC_TBL <= USED 0
+SSF_Update_CRC <= USED 0
+;FILE main_nand_internal.o
+NFB_BLoader_Append <= USED 0
+NFB_BLoader_Append_Done <= USED 0
+NFB_BlockErase <= USED 0
+NFB_DualBL_PreCopyMainILB2TmpILB <= USED 0
+NFB_GenerateImageList <= USED 0
+NFB_ImageLiast_RetrieveRomInfo <= USED 0
+NFB_Image_GetPacket <= USED 0
+NFB_Image_IsImageBlock <= USED 0
+NFB_MBA_Check <= USED 0
+NFB_Old_GenerateImageList <= USED 0
+NFB_UpdateImageListST <= USED 0
+NUTL_FindLastAvailableBlockAmongImages <= USED 0
+NUTL_FindLastAvailableBlockAmongSecure <= USED 0
+;FILE md5.o
+;FILE mmc_core.o
+mmc_boot_config <= USED 0
+mmc_card_avail <= USED 0
+mmc_card_protected <= USED 0
+mmc_clr_write_prot <= USED 0
+mmc_ctrl_speed_class <= USED 0
+mmc_get_cid <= USED 0
+mmc_get_wpg_size <= USED 0
+mmc_lock_unlock <= USED 0
+mmc_part_read <= USED 0
+mmc_part_write <= USED 0
+mmc_set_boot_bus <= USED 0
+mmc_set_boot_prot <= USED 0
+mmc_set_boot_wp <= USED 0
+mmc_set_enh_size <= USED 0
+mmc_set_enh_start_addr <= USED 0
+mmc_set_gp_size <= USED 0
+mmc_set_part_attr <= USED 0
+mmc_set_part_compl <= USED 0
+mmc_set_reset_func <= USED 0
+;FILE msdc.o
+msdc_card_power <= USED 0
+msdc_clock <= USED 0
+msdc_clr_fifo <= USED 0
+msdc_deinit <= USED 0
+msdc_dma_resume <= USED 0
+msdc_dump_card_status <= USED 0
+msdc_flush_membuf <= USED 0
+msdc_intr_mask <= USED 0
+msdc_pio_write_byte <= USED 0
+msdc_pio_write_hword <= USED 0
+msdc_queue_buf <= USED 0
+msdc_set_axi <= USED 0
+msdc_set_card_pwr <= USED 0
+msdc_set_dma <= USED 0
+msdc_set_host_level_pwr <= USED 0
+msdc_set_host_pwr <= USED 0
+msdc_set_pio_bits <= USED 0
+;FILE msdc_utils.o
+msdc_get_field_16 <= USED 0
+msdc_set_field_16 <= USED 0
+;FILE msha1.o
+cal_S <= USED 0
+;FILE nand_download_internal.o
+NAND_Download_BL_CalProgramDataSize_Internal <= USED 0
+NAND_Download_BL_WritePacketToFlash_Internal_Erase <= USED 0
+NAND_Download_BL_WritePacketToFlash_Internal_Program <= USED 0
+dump_nfiecc <= USED 0
+;FILE nand_drv_COMMON_v3_1.o
+NAND_COMMON_ChangeInterface <= USED 0
+NAND_COMMON_CopyBack_V3 <= USED 0
+SAL_NFI_GetFeature <= USED 0
+dump_nfi <= USED 0
+;FILE nand_drv_SAMSUNG.o
+;FILE nand_drv_ST.o
+;FILE nand_drv_superAND.o
+;FILE nand_util_func.o
+NUTL_BlockCopy <= USED 0
+NUTL_ECC_Correction <= USED 0
+NUTL_EraseBlocks <= USED 0
+NUTL_NFI_GPIO_DEINIT <= USED 0
+NUTL_NFI_ReInit <= USED 0
+NUTL_RandomRead <= USED 0
+NUTL_ReadBlocks <= USED 0
+NUTL_ReadID <= USED 0
+NUTL_SpareCompose <= USED 0
+NUTL_SpareDecompose <= USED 0
+NUTL_WriteBlocks <= USED 0
+;FILE nor_download_internal.o
+NOR_Download_BL_CheckHeaderBlock_Internal <= USED 0
+NOR_Download_BL_GetPacketFromCOM_Internal <= USED 0
+NOR_Download_BL_SetAllProfiles_Internal <= USED 0
+;FILE platform.o
+SAL_DisableWDT <= USED 0
+SAL_ForceDownloadViaUsb <= USED 0
+SAL_Init <= USED 0
+SAL_IsBatteryExist <= USED 0
+;FILE pmic_wrap_init.o
+pwrap_dump_all_register <= USED 0
+pwrap_dump_ap_register <= USED 0
+pwrap_init <= USED 0
+pwrap_init_DA <= USED 0
+;FILE rid.o
+;FILE rtc.o
+MT8127_set_RTC_Base_Reg <= USED 0
+pl_power_off <= USED 0
+rtc_bbpu_power_on <= USED 0
+rtc_boot_check <= USED 0
+rtc_boot_check_6323 <= USED 0
+rtc_boot_check_6397 <= USED 0
+rtc_mark_bypass_pwrkey <= USED 0
+rtc_rdwr_uart_bits <= USED 0
+;FILE sal_pll.o
+SAL_PLL_DumpSetting <= USED 0
+SAL_PLL_GetBusFrequency <= USED 0
+;FILE sb_encode.o
+sb_is_stop <= USED 0
+sb_is_uartdl4enduser <= USED 0
+;FILE sdmmc.o
+SDMMC_ConfigurePartition <= USED 0
+SDMMC_Erase_Part <= USED 0
+SDMMC_GetAddrMode <= USED 0
+SDMMC_GetEraseSize <= USED 0
+SDMMC_IsPartitioned <= USED 0
+SDMMC_UnitTest <= USED 0
+SDMMC_get_boot_host_id <= USED 0
+verifyErase <= USED 0
+;FILE sdmmc_download_internal.o
+SDMMC_Download_BL_CalProgramDataSize_Internal <= USED 0
+SDMMC_Download_BL_CheckHeaderBlock_Internal <= USED 0
+;FILE sdmmc_handler.o
+SDMMC_SetUnsparseStatus <= USED 0
+;FILE sec_dev.o
+;FILE sec_dl.o
+;FILE sec_dl_v1.o
+;FILE sec_dl_v3.o
+;FILE sec_flashtool_cfg.o
+;FILE sec_hdr.o
+set_shdr_sign_len <= USED 0
+set_shdr_sign_offset <= USED 0
+shdr_img_len <= USED 0
+shdr_img_offset <= USED 0
+shdr_magic <= USED 0
+shdr_sig_len <= USED 0
+shdr_sig_offset <= USED 0
+shdr_sign_len <= USED 0
+shdr_sign_offset <= USED 0
+;FILE sec_info.o
+;FILE sec_info_v1.o
+;FILE sec_info_v3.o
+;FILE sec_key.o
+;FILE sec_secro.o
+is_sw_sec_boot_dl_1st_loader_allowed <= USED 0
+is_sw_sec_boot_dl_images_allowed <= USED 0
+is_sw_sec_boot_format_allowed <= USED 0
+;FILE sec_util.o
+;FILE seccfg.o
+;FILE seccfg_crypto.o
+;FILE seccfg_dev.o
+;FILE seccfg_ver.o
+;FILE security.o
+CopyCustomNamToBL2 <= USED 0
+DownloadCompletenessCheck <= USED 0
+GetCustomerName <= USED 0
+GetFATRange <= USED 0
+GetPCInfoAddr <= USED 0
+GetPCInfoData <= USED 0
+GetPCInfoSize <= USED 0
+GetPCInfoState <= USED 0
+InitSecureUsbDL <= USED 0
+IsCodeDownloadForbidden <= USED 0
+IsSecRORange <= USED 0
+IsSecUsbDlEnabled <= USED 0
+IsValidDownloadRange <= USED 0
+IsValidFormatRange <= USED 0
+IsValidFormatRange64 <= USED 0
+IsValidReadbackRange <= USED 0
+IsValidReadbackRange64 <= USED 0
+NFB_IsValidDownloadRange <= USED 0
+NFB_IsValidFormatRange <= USED 0
+NFB_IsValidReadbackRange <= USED 0
+SetBLCodeUpdated <= USED 0
+UpdateFlashBySectorBoundary <= USED 0
+UpdateSecUsbdlImageOffset <= USED 0
+;FILE sej_export.o
+;FILE sej_hk.o
+;FILE sej_sk.o
+sej_deinit <= USED 0
+sej_set_clk <= USED 0
+;FILE sha1_sw.o
+CHE_shaHash <= USED 0
+CHE_shaStrUpdate <= USED 0
+CHE_shaString <= USED 0
+sec_lib_sha1 <= USED 0
+;FILE test_bus.o
+;FILE test_ext_sram.o
+RAM_Simple_Test <= USED 0
+;FILE test_main.o
+;FILE usbphy.o
+;FILE xgpt.o
+gpt4_tick2time_us <= USED 0

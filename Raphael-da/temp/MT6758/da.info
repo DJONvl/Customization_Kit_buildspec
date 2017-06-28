@@ -1,0 +1,10 @@
+bbchip_hw_code=0x6758
+bbchip_hw_sub_code=0x8A00
+bbchip_hw_ver=0xCA00
+bbchip_sw_ver=0x0000
+da_feature_set=0x1000
+bin_directory=.\Raphael-da/BIN\MTK_MT6758_DA.bin
+list_file=.\Raphael-da/BIN\MTK_MT6758_DA.bin\MTK_MT6758_DA_list.txt
+epp_bin_directory=.\Raphael-da/BIN\MTK_MT6758_EPP.bin
+epp_list_file=.\Raphael-da/BIN\MTK_MT6758_EPP.bin\MTK_MT6758_EPP_list.txt
+sig_file=.\Raphael-da/temp\MT6758\MTK_MT6758_DA.sig

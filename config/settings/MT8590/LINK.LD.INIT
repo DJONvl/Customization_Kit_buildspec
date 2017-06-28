@@ -1,0 +1,25 @@
+; SRAM 128K, max code 84K, bss 32K, stack reserve 12K.
+INT_SYSRAM 0x200000 
+{
+	INT_SYSRAM 0x200000 0x15000
+	{
+		BOOTARM.o	(Init, +First)
+		*			(+RO, +RW)
+	}
+    INT_SYSRAM_ZI +0 0x8000
+	{
+		*			(+ZI)
+	}
+	INT_STACK_TOP +0 0x3000
+	{
+	}
+}
+
+;fake load region
+;just let AddDAInfo.exe add DA_LOOP to the AllInOne.bin
+EXT_RAM 0x80000000
+{
+	EXT_RAM 0x80000000
+	{
+	}
+}

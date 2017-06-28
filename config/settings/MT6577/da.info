@@ -1,0 +1,10 @@
+bbchip_hw_code=0x6577
+bbchip_hw_sub_code=0x0000
+bbchip_hw_ver=0xCA00
+bbchip_sw_ver=0xE100
+da_feature_set=0x1000
+bin_directory=.\BIN\MTK_MT6577_DA.bin
+list_file=.\BIN\MTK_MT6577_DA.bin\MTK_MT6577_DA_list.txt
+epp_bin_directory=.\BIN\MTK_MT6577_EPP.bin
+epp_list_file=.\BIN\MTK_MT6577_EPP.bin\MTK_MT6577_EPP_list.txt
+sig_file=.\LIB\MTK_MT6577_DA.sig

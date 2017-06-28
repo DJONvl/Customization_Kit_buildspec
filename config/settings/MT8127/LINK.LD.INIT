@@ -1,0 +1,21 @@
+INT_SYSRAM 0x200000
+{
+	INT_SYSRAM 0x200000
+	{
+		BOOTARM.o	(Init, +First)
+		*			(+RO, +RW)
+	}
+    INT_SYSRAM_ZI +0
+	{
+		*			(+ZI)
+	}
+}
+
+;fake load region
+;just let AddDAInfo.exe add DA_LOOP to the AllInOne.bin
+EXT_RAM 0x80000000
+{
+	EXT_RAM 0x80000000
+	{
+	}
+}

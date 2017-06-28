@@ -1,0 +1,10 @@
+bbchip_hw_code=BBCHIP_HW_CODE
+bbchip_hw_sub_code=BBCHIP_HW_SUB_CODE
+bbchip_hw_ver=BBCHIP_HW_VER
+bbchip_sw_ver=BBCHIP_SW_VER
+da_feature_set=DA_FEATURE_SET
+bin_directory=.\BIN\MTK_BBCHIP_NAME_DA.bin
+list_file=.\BIN\MTK_BBCHIP_NAME_DA.bin\MTK_BBCHIP_NAME_DA_list.txt
+epp_bin_directory=.\BIN\MTK_BBCHIP_NAME_EPP.bin
+epp_list_file=.\BIN\MTK_BBCHIP_NAME_EPP.bin\MTK_BBCHIP_NAME_EPP_list.txt
+sig_file=.\temp\BBCHIP_NAME\MTK_BBCHIP_NAME_DA.sig

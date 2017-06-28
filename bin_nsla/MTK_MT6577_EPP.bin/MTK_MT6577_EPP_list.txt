@@ -1,0 +1,323 @@
+
+================================================================================
+
+Section Cross References
+
+    epp_GFH_body.o(EPP_GFH) refers to epp.o(.text) for EPP_Entry_Point
+    epp.o(.text) refers to platform_MT6575.o(.text) for NOR_Boot_IsEnabled
+
+
+================================================================================
+
+Image Symbol Table
+
+    Mapping Symbols
+
+    Sym    Value        Execution Region
+
+    $d     0xc2010000   EPP_GFH_SECTION
+    $f     0xc2010030   EPP_GFH_SECTION
+    $t     0xc2010038   READ_ONLY
+    $b     0xc2010048   READ_ONLY
+    $b     0xc2010050   READ_ONLY
+    $b     0xc201005a   READ_ONLY
+    $b     0xc2010066   READ_ONLY
+    $b     0xc2010070   READ_ONLY
+    $b     0xc201007a   READ_ONLY
+    $b     0xc2010082   READ_ONLY
+    $d     0xc20100b2   READ_ONLY
+    $a     0xc20100b4   READ_ONLY
+    $d     0xc2010170   READ_ONLY
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    SRC\epp_GFH_body.c                       0x00000000   Number         0  epp_GFH_body.o ABSOLUTE
+    EPP_SIGNATURE_SECTION                    0xc2010170   Data           0  epp_GFH_body.o(EPP_SIGNATURE_SECTION)
+    EPP_GFH                                  0xc2010000   Data           0  epp_GFH_body.o(EPP_GFH)
+    C$debug_abbrev0                          0x00000000   Data           0  epp_GFH_body.o(.debug_abbrev)
+    C$debug_info9                            0x00000000   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_line2                            0x00000000   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_macinfo5                         0x00000000   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_pubnames4                        0x00000000   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_pubnames16                       0x00000064   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_pubnames10                       0x00000084   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_line14                           0x0000013c   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_line8                            0x00000168   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_pubnames46                       0x000001ac   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_line44                           0x000001b0   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_macinfo17                        0x000001bc   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_info33                           0x000001d8   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_macinfo11                        0x00000204   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_macinfo47                        0x0000022c   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_line32                           0x00000238   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_line62                           0x000002c0   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_macinfo35                        0x0000032c   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_line20                           0x00000348   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_info45                           0x000003e4   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_macinfo65                        0x00000440   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_pubnames34                       0x000004a4   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_macinfo23                        0x000004e4   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_pubnames64                       0x00000624   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_pubnames22                       0x000006e4   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_info21                           0x00000850   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_info3                            0x000008e0   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_info15                           0x000009a4   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_info63                           0x00000a00   Data           0  epp_GFH_body.o(.debug_info)
+    EPP_GFH$8                                0xc2010000   Data           0  epp_GFH_body.o(EPP_GFH)
+    EPP_SIGNATURE_SECTION$13                 0xc2010170   Data           0  epp_GFH_body.o(EPP_SIGNATURE_SECTION)
+    SRC\epp.c                                0x00000000   Number         0  epp.o ABSOLUTE
+    .text                                    0xc2010038   Thumb Code     0  epp.o(.text)
+    C$debug_abbrev0                          0x00000000   Data           0  epp_GFH_body.o(.debug_abbrev)
+    C$debug_frame79                          0x00000000   Data           0  epp.o(.debug_frame)
+    C$debug_info15                           0x00000000   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_loc78                            0x00000000   Data           0  epp.o(.debug_loc)
+    C$debug_pubnames22                       0x00000064   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_pubnames16                       0x00000084   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_line20                           0x0000013c   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_line14                           0x00000168   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_macinfo23                        0x000001bc   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_macinfo17                        0x00000204   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_line68                           0x000003e0   Data           0  epp.o(.debug_line)
+    C$debug_line80                           0x0000041c   Data           0  epp.o(.debug_line)
+    C$debug_line2                            0x00000458   Data           0  epp.o(.debug_line)
+    C$debug_macinfo5                         0x000004f4   Data           0  epp.o(.debug_macinfo)
+    C$debug_line74                           0x00000574   Data           0  epp.o(.debug_line)
+    C$debug_line26                           0x000005f4   Data           0  epp.o(.debug_line)
+    C$debug_line8                            0x00000630   Data           0  epp.o(.debug_line)
+    C$debug_line38                           0x00000688   Data           0  epp.o(.debug_line)
+    C$debug_macinfo29                        0x0000069c   Data           0  epp.o(.debug_macinfo)
+    C$debug_line44                           0x000006c8   Data           0  epp.o(.debug_line)
+    C$debug_pubnames70                       0x00000710   Data           0  epp.o(.debug_pubnames)
+    C$debug_line56                           0x00000714   Data           0  epp.o(.debug_line)
+    C$debug_macinfo11                        0x00000734   Data           0  epp.o(.debug_macinfo)
+    C$debug_pubnames82                       0x00000734   Data           0  epp.o(.debug_pubnames)
+    C$debug_macinfo41                        0x00000748   Data           0  epp.o(.debug_macinfo)
+    C$debug_pubnames76                       0x0000075c   Data           0  epp.o(.debug_pubnames)
+    C$debug_line32                           0x00000768   Data           0  epp.o(.debug_line)
+    C$debug_macinfo47                        0x00000768   Data           0  epp.o(.debug_macinfo)
+    C$debug_pubnames28                       0x00000794   Data           0  epp.o(.debug_pubnames)
+    C$debug_info21                           0x000009a4   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_info27                           0x00000bd4   Data           0  epp.o(.debug_info)
+    C$debug_macinfo59                        0x00001978   Data           0  epp.o(.debug_macinfo)
+    C$debug_macinfo35                        0x00001994   Data           0  epp.o(.debug_macinfo)
+    C$debug_pubnames40                       0x00006cb8   Data           0  epp.o(.debug_pubnames)
+    C$debug_pubnames46                       0x00006d98   Data           0  epp.o(.debug_pubnames)
+    C$debug_info39                           0x0000704c   Data           0  epp.o(.debug_info)
+    C$debug_info69                           0x000073f0   Data           0  epp.o(.debug_info)
+    C$debug_info81                           0x000075b0   Data           0  epp.o(.debug_info)
+    C$debug_info3                            0x000076b8   Data           0  epp.o(.debug_info)
+    C$debug_info75                           0x00007708   Data           0  epp.o(.debug_info)
+    C$debug_info9                            0x000078c0   Data           0  epp.o(.debug_info)
+    C$debug_info45                           0x00007908   Data           0  epp.o(.debug_info)
+    C$debug_info57                           0x0000abc4   Data           0  epp.o(.debug_info)
+    C$debug_info33                           0x0000ac18   Data           0  epp.o(.debug_info)
+    ./SRC/dram_init_util.s                   0x00000000   Number         0  dram_init_util.o ABSOLUTE
+    Autotrack                                0xc20100b4   ARM Code     188  dram_init_util.o(Autotrack)
+    LoadEnd                                  0xc2010164   ARM Code       0  dram_init_util.o(Autotrack)
+    SRC\platform_MT6575.c                    0x00000000   Number         0  platform_MT6575.o ABSOLUTE
+    .text                                    0xc201009c   Thumb Code     0  platform_MT6575.o(.text)
+    C$debug_abbrev0                          0x00000000   Data           0  epp_GFH_body.o(.debug_abbrev)
+    C$debug_info15                           0x00000000   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_pubnames22                       0x00000064   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_frame61                          0x00000068   Data           0  platform_MT6575.o(.debug_frame)
+    C$debug_pubnames16                       0x00000084   Data           0  epp_GFH_body.o(.debug_pubnames)
+    C$debug_line20                           0x0000013c   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_loc60                            0x00000154   Data           0  platform_MT6575.o(.debug_loc)
+    C$debug_line14                           0x00000168   Data           0  epp_GFH_body.o(.debug_line)
+    C$debug_macinfo23                        0x000001bc   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_macinfo17                        0x00000204   Data           0  epp_GFH_body.o(.debug_macinfo)
+    C$debug_line26                           0x000005f4   Data           0  epp.o(.debug_line)
+    C$debug_macinfo29                        0x0000069c   Data           0  epp.o(.debug_macinfo)
+    C$debug_line32                           0x000006c8   Data           0  epp.o(.debug_line)
+    C$debug_line8                            0x00000714   Data           0  epp.o(.debug_line)
+    C$debug_macinfo47                        0x00000748   Data           0  epp.o(.debug_macinfo)
+    C$debug_macinfo35                        0x00000768   Data           0  epp.o(.debug_macinfo)
+    C$debug_pubnames28                       0x00000794   Data           0  epp.o(.debug_pubnames)
+    C$debug_line50                           0x000007e8   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_line62                           0x00000860   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_line68                           0x000008d8   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_line74                           0x00000950   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_info21                           0x000009a4   Data           0  epp_GFH_body.o(.debug_info)
+    C$debug_line80                           0x000009c8   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_line86                           0x00000a40   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_line2                            0x00000ab8   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_info27                           0x00000bd4   Data           0  epp.o(.debug_info)
+    C$debug_line56                           0x00000c18   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_line44                           0x00000c78   Data           0  platform_MT6575.o(.debug_line)
+    C$debug_macinfo11                        0x00001978   Data           0  epp.o(.debug_macinfo)
+    C$debug_macinfo5                         0x000019b4   Data           0  platform_MT6575.o(.debug_macinfo)
+    C$debug_pubnames34                       0x00006d98   Data           0  epp.o(.debug_pubnames)
+    C$debug_info33                           0x00007908   Data           0  epp.o(.debug_info)
+    C$debug_pubnames52                       0x00009f24   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_pubnames64                       0x00009f50   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_pubnames70                       0x00009f7c   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_pubnames76                       0x00009f9c   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_pubnames82                       0x00009fc0   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_pubnames88                       0x00009fe0   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_pubnames58                       0x0000a000   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_pubnames46                       0x0000a07c   Data           0  platform_MT6575.o(.debug_pubnames)
+    C$debug_info9                            0x0000abc4   Data           0  epp.o(.debug_info)
+    C$debug_info51                           0x0000ac64   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info63                           0x0000ace0   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info45                           0x0000ad5c   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info69                           0x0000b124   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info75                           0x0000b1a8   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info81                           0x0000b23c   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info87                           0x0000b2ac   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info3                            0x0000b320   Data           0  platform_MT6575.o(.debug_info)
+    C$debug_info57                           0x0000b37c   Data           0  platform_MT6575.o(.debug_info)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THUMB_ISAv1$M$PE$A:L22$X:L11$S22$IW$~STKCKD$~SHL$OSPACE 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    Image$$EPP_GFH_SECTION$$Length           0x00000038   Number         0  anon$$obj.o ABSOLUTE
+    Load$$EPP_GFH_SECTION$$Base              0xc2010000   Number         0  anon$$obj.o ABSOLUTE
+    g_epp_gfh                                0xc2010000   Data          56  epp_GFH_body.o(EPP_GFH)
+    PrepareExtRAM                            0xc2010038   Thumb Code    96  epp.o(.text)
+    EPP_Entry_Point                          0xc2010098   Thumb Code     4  epp.o(.text)
+    NOR_Boot_IsEnabled                       0xc201009c   Thumb Code     4  platform_MT6575.o(.text)
+    USBDownloadEnabled                       0xc20100a0   Thumb Code     4  platform_MT6575.o(.text)
+    SetupPLL                                 0xc20100a4   Thumb Code     4  platform_MT6575.o(.text)
+    SetupEMI_DRAM                            0xc20100a8   Thumb Code     4  platform_MT6575.o(.text)
+    UART_Init                                0xc20100ac   Thumb Code     2  platform_MT6575.o(.text)
+    SetupUART                                0xc20100ae   Thumb Code     4  platform_MT6575.o(.text)
+    store_8word                              0xc20100b4   ARM Code       0  dram_init_util.o(Autotrack)
+    load_8word                               0xc20100e0   ARM Code       0  dram_init_util.o(Autotrack)
+    g_epp_sig                                0xc2010170   Data         256  epp_GFH_body.o(EPP_SIGNATURE_SECTION)
+
+
+================================================================================
+
+Memory Map of the image
+
+  Image entry point : Not specified.
+
+  Load Region EPP (Base: 0xc2010000, Size: 0x00000270, Max: 0x00019f00, ABSOLUTE)
+
+    Execution Region EPP_GFH_SECTION (Base: 0xc2010000, Size: 0x00000038, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr  Idx  E Section Name        Object
+
+    0xc2010000   0x00000038   Data   RO     1     EPP_GFH             epp_GFH_body.o
+
+
+    Execution Region READ_ONLY (Base: 0xc2010038, Size: 0x00000238, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr  Idx  E Section Name        Object
+
+    0xc2010038   0x00000064   Code   RO    32     .text               epp.o
+    0xc201009c   0x00000018   Code   RO    69     .text               platform_MT6575.o
+    0xc20100b4   0x000000bc   Code   RO    68     Autotrack           dram_init_util.o
+    0xc2010170   0x00000100   Data   RO     2     EPP_SIGNATURE_SECTION  epp_GFH_body.o
+
+
+    Execution Region READ_WRITE (Base: 0xc2010270, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+
+  Load Region LR$$Debug (Base: 0x00000000, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER$$Debug (Base: 0x00000000, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr  Idx  E Section Name        Object
+
+    0x00000000   0x000003ec   Dbug   RW     7     .debug_abbrev       epp_GFH_body.o
+    0x00000000   0x00000068   Dbug   RW    46     .debug_frame        epp.o
+    0x00000068   0x0000008c   Dbug   RW    95     .debug_frame        platform_MT6575.o
+    0x00000000   0x000001d8   Dbug   RW    13     .debug_info         epp_GFH_body.o
+    0x000001d8   0x0000020c   Dbug   RW    21     .debug_info         epp_GFH_body.o
+    0x000003e4   0x0000046c   Dbug   RW    17     .debug_info         epp_GFH_body.o
+    0x00000850   0x00000090   Dbug   RW    29     .debug_info         epp_GFH_body.o
+    0x000008e0   0x000000c4   Dbug   RW     4     .debug_info         epp_GFH_body.o
+    0x000009a4   0x0000005c   Dbug   RW     9     .debug_info         epp_GFH_body.o
+    0x00000a00   0x000001d4   Dbug   RW    25     .debug_info         epp_GFH_body.o
+    0x00000bd4   0x00006478   Dbug   RW    48     .debug_info         epp.o
+    0x0000704c   0x000003a4   Dbug   RW    55     .debug_info         epp.o
+    0x000073f0   0x000001c0   Dbug   RW    34     .debug_info         epp.o
+    0x000075b0   0x00000108   Dbug   RW    37     .debug_info         epp.o
+    0x000076b8   0x00000050   Dbug   RW    40     .debug_info         epp.o
+    0x00007708   0x000001b8   Dbug   RW    43     .debug_info         epp.o
+    0x000078c0   0x00000048   Dbug   RW    52     .debug_info         epp.o
+    0x00007908   0x000032bc   Dbug   RW    59     .debug_info         epp.o
+    0x0000abc4   0x00000054   Dbug   RW    63     .debug_info         epp.o
+    0x0000ac18   0x0000004c   Dbug   RW    66     .debug_info         epp.o
+    0x0000ac64   0x0000007c   Dbug   RW    71     .debug_info         platform_MT6575.o
+    0x0000ace0   0x0000007c   Dbug   RW    74     .debug_info         platform_MT6575.o
+    0x0000ad5c   0x000003c8   Dbug   RW    97     .debug_info         platform_MT6575.o
+    0x0000b124   0x00000084   Dbug   RW    77     .debug_info         platform_MT6575.o
+    0x0000b1a8   0x00000094   Dbug   RW    80     .debug_info         platform_MT6575.o
+    0x0000b23c   0x00000070   Dbug   RW    83     .debug_info         platform_MT6575.o
+    0x0000b2ac   0x00000074   Dbug   RW    86     .debug_info         platform_MT6575.o
+    0x0000b320   0x0000005c   Dbug   RW    89     .debug_info         platform_MT6575.o
+    0x0000b37c   0x00000108   Dbug   RW    92     .debug_info         platform_MT6575.o
+    0x00000000   0x0000013c   Dbug   RW     3     .debug_line         epp_GFH_body.o
+    0x0000013c   0x0000002c   Dbug   RW     8     .debug_line         epp_GFH_body.o
+    0x00000168   0x00000048   Dbug   RW    12     .debug_line         epp_GFH_body.o
+    0x000001b0   0x00000088   Dbug   RW    16     .debug_line         epp_GFH_body.o
+    0x00000238   0x00000088   Dbug   RW    20     .debug_line         epp_GFH_body.o
+    0x000002c0   0x00000088   Dbug   RW    24     .debug_line         epp_GFH_body.o
+    0x00000348   0x00000098   Dbug   RW    28     .debug_line         epp_GFH_body.o
+    0x000003e0   0x0000003c   Dbug   RW    33     .debug_line         epp.o
+    0x0000041c   0x0000003c   Dbug   RW    36     .debug_line         epp.o
+    0x00000458   0x0000011c   Dbug   RW    39     .debug_line         epp.o
+    0x00000574   0x00000080   Dbug   RW    42     .debug_line         epp.o
+    0x000005f4   0x0000003c   Dbug   RW    47     .debug_line         epp.o
+    0x00000630   0x00000058   Dbug   RW    51     .debug_line         epp.o
+    0x00000688   0x00000040   Dbug   RW    54     .debug_line         epp.o
+    0x000006c8   0x0000004c   Dbug   RW    58     .debug_line         epp.o
+    0x00000714   0x00000054   Dbug   RW    62     .debug_line         epp.o
+    0x00000768   0x00000080   Dbug   RW    65     .debug_line         epp.o
+    0x000007e8   0x00000078   Dbug   RW    70     .debug_line         platform_MT6575.o
+    0x00000860   0x00000078   Dbug   RW    73     .debug_line         platform_MT6575.o
+    0x000008d8   0x00000078   Dbug   RW    76     .debug_line         platform_MT6575.o
+    0x00000950   0x00000078   Dbug   RW    79     .debug_line         platform_MT6575.o
+    0x000009c8   0x00000078   Dbug   RW    82     .debug_line         platform_MT6575.o
+    0x00000a40   0x00000078   Dbug   RW    85     .debug_line         platform_MT6575.o
+    0x00000ab8   0x00000160   Dbug   RW    88     .debug_line         platform_MT6575.o
+    0x00000c18   0x00000060   Dbug   RW    91     .debug_line         platform_MT6575.o
+    0x00000c78   0x00000060   Dbug   RW    96     .debug_line         platform_MT6575.o
+    0x00000000   0x00000154   Dbug   RW    45     .debug_loc          epp.o
+    0x00000154   0x00000074   Dbug   RW    94     .debug_loc          platform_MT6575.o
+    0x00000000   0x000001bc   Dbug   RW     6     .debug_macinfo      epp_GFH_body.o
+    0x000001bc   0x00000048   Dbug   RW    11     .debug_macinfo      epp_GFH_body.o
+    0x00000204   0x00000028   Dbug   RW    15     .debug_macinfo      epp_GFH_body.o
+    0x0000022c   0x00000100   Dbug   RW    19     .debug_macinfo      epp_GFH_body.o
+    0x0000032c   0x00000114   Dbug   RW    23     .debug_macinfo      epp_GFH_body.o
+    0x00000440   0x000000a4   Dbug   RW    27     .debug_macinfo      epp_GFH_body.o
+    0x000004e4   0x00000010   Dbug   RW    31     .debug_macinfo      epp_GFH_body.o
+    0x000004f4   0x000001a8   Dbug   RW    41     .debug_macinfo      epp.o
+    0x0000069c   0x00000098   Dbug   RW    50     .debug_macinfo      epp.o
+    0x00000734   0x00000014   Dbug   RW    53     .debug_macinfo      epp.o
+    0x00000748   0x00000020   Dbug   RW    57     .debug_macinfo      epp.o
+    0x00000768   0x00001210   Dbug   RW    61     .debug_macinfo      epp.o
+    0x00001978   0x0000001c   Dbug   RW    64     .debug_macinfo      epp.o
+    0x00001994   0x00000020   Dbug   RW    67     .debug_macinfo      epp.o
+    0x000019b4   0x000001b0   Dbug   RW    90     .debug_macinfo      platform_MT6575.o
+    0x00000000   0x00000064   Dbug   RW     5     .debug_pubnames     epp_GFH_body.o
+    0x00000064   0x00000020   Dbug   RW    10     .debug_pubnames     epp_GFH_body.o
+    0x00000084   0x00000128   Dbug   RW    14     .debug_pubnames     epp_GFH_body.o
+    0x000001ac   0x000002f8   Dbug   RW    18     .debug_pubnames     epp_GFH_body.o
+    0x000004a4   0x00000180   Dbug   RW    22     .debug_pubnames     epp_GFH_body.o
+    0x00000624   0x000000c0   Dbug   RW    26     .debug_pubnames     epp_GFH_body.o
+    0x000006e4   0x0000002c   Dbug   RW    30     .debug_pubnames     epp_GFH_body.o
+    0x00000710   0x00000024   Dbug   RW    35     .debug_pubnames     epp.o
+    0x00000734   0x00000028   Dbug   RW    38     .debug_pubnames     epp.o
+    0x0000075c   0x00000038   Dbug   RW    44     .debug_pubnames     epp.o
+    0x00000794   0x00006524   Dbug   RW    49     .debug_pubnames     epp.o
+    0x00006cb8   0x000000e0   Dbug   RW    56     .debug_pubnames     epp.o
+    0x00006d98   0x0000318c   Dbug   RW    60     .debug_pubnames     epp.o
+    0x00009f24   0x0000002c   Dbug   RW    72     .debug_pubnames     platform_MT6575.o
+    0x00009f50   0x0000002c   Dbug   RW    75     .debug_pubnames     platform_MT6575.o
+    0x00009f7c   0x00000020   Dbug   RW    78     .debug_pubnames     platform_MT6575.o
+    0x00009f9c   0x00000024   Dbug   RW    81     .debug_pubnames     platform_MT6575.o
+    0x00009fc0   0x00000020   Dbug   RW    84     .debug_pubnames     platform_MT6575.o
+    0x00009fe0   0x00000020   Dbug   RW    87     .debug_pubnames     platform_MT6575.o
+    0x0000a000   0x0000007c   Dbug   RW    93     .debug_pubnames     platform_MT6575.o
+    0x0000a07c   0x000000e0   Dbug   RW    98     .debug_pubnames     platform_MT6575.o
+

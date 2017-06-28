@@ -1,0 +1,21 @@
+
+EXT_RAM 0x80000000 0x100000
+{	
+	EXT_RAM 0x80000000
+	{
+	    BOOTARM_DRAM.o (Init, +First)
+		*                (+RO, +RW)
+	}
+    EXT_RAM_ZI +0
+	{
+		*                (+ZI)
+	}
+
+	;Image$$INT_SYSRAM$$Base and Image$$INT_SYSRAM$$Length are used by BOOTARM.s.
+	;Define below fake section to pass the compile.
+	;Actually functions in BOOTARM.s won't be linked to DA_LOOP bin.
+	INT_SYSRAM +0
+	{
+	}
+}
+
